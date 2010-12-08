@@ -20,5 +20,20 @@ Use a fluent interface to generate TwiML responses for use by Twilio.
                     r.Redirect(Url.Action("Index"));
                 });
         }
+        
+Generates:
+		<Response>
+			  <Gather action="/Twilio/ChooseItem" method="POST" timeout="1">
+					<Say>You Have reached Our Company</Say> 
+					<Say>If you know your partie's extention, you may dial it at any time.</Say> 
+					<Say>For Sales, Press 1</Say> 
+					<Say>For Billing, Press 2</Say> 
+					<Say>For Support, Press 3</Say> 
+					<Say>For a Company Directory, Press 4</Say> 
+					<Say>To Repeat these options, Press 9</Say> 
+					<Pause length="5" /> 
+			  </Gather>
+			  <Redirect>/Twilio</Redirect> 
+		</Response>
 
 Copyright (c) 2010 Chris Kooken and contributors. See LICENSE for details.
