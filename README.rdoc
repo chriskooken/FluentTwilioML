@@ -2,13 +2,13 @@
 
 Use a fluent interface to generate TwiML responses for use by Twilio.
 
-public virtual ActionResult Index()
+		public virtual ActionResult Index()
         {
             return new TwilioResult(r =>
                 {
                     r.Gather(Url.Action("ChooseItem"), HttpMethod.POST, 1, null, null,x =>
                         {
-                            x.Say("You Have reached Compass Solutions for Awtism");
+                            x.Say("You Have reached Our Company");
                             x.Say("If you know your partie's extention, you may dial it at any time.");
                             x.Say("For Sales, Press 1");
                             x.Say("For Billing, Press 2");
