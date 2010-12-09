@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentTwilio", "FluentTwilio\FluentTwilio.csproj", "{4DF57DF6-2F49-4CB9-B3F8-BA2309EDE489}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B4154D06-B4AE-49C6-9631-22FDE5CA3DAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{4DF57DF6-2F49-4CB9-B3F8-BA2309EDE489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF57DF6-2F49-4CB9-B3F8-BA2309EDE489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF57DF6-2F49-4CB9-B3F8-BA2309EDE489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4154D06-B4AE-49C6-9631-22FDE5CA3DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4154D06-B4AE-49C6-9631-22FDE5CA3DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4154D06-B4AE-49C6-9631-22FDE5CA3DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4154D06-B4AE-49C6-9631-22FDE5CA3DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
