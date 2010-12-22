@@ -43,7 +43,7 @@ namespace UnitTests
             });
 
             string s = result.Render();
-            ;
+            
         }
     }
 }

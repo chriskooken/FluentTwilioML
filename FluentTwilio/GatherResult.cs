@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Web.Mvc;
 
 namespace FluentTwilio
 {
@@ -11,7 +12,10 @@ namespace FluentTwilio
             action.Invoke(this);
         }
 
-
+        public override void ExecuteResult(ControllerContext context)
+        {
+            //noop
+        }
 
     }
 }

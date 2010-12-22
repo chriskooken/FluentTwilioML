@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Mvc;
 
 namespace FluentTwilio
 {
@@ -219,6 +220,12 @@ namespace FluentTwilio
             if (reason.HasValue) xmlResponse.Append(string.Format(" reason=\"{0}\"", reason.ToString().ToLower()));
             xmlResponse.Append(string.Format("/>"));
             return this;
+        }
+
+        public override void ExecuteResult(ControllerContext context)
+        {
+            context.HttpContext.Response.ContentType = "text/xml";
+            context.HttpContext.Response.Write(xmlResponse.ToString());
         }
     }
 }

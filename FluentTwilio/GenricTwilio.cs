@@ -1,8 +1,9 @@
 ﻿using System.Text;
+using System.Web.Mvc;
 
 namespace FluentTwilio
 {
-    public class GenricTwilio<T> where T : class
+    public abstract class GenricTwilio<T> : ActionResult where T : class
     {
         public StringBuilder xmlResponse;
         public T Say(string message)
